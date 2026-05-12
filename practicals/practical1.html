@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Practical 1</title>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <a href="../index.html" class="back-btn">← Back</a>
+
+      <h2>Practical 1</h2>
+
+      <div class="card">
+        <div class="file-title">Main.java</div>
+
+        <button class="copy-btn" onclick="copyCode('p1', this)">Copy</button>
+
+        <pre><code id="p1">Loading...</code></pre>
+      </div>
+    </div>
+
+    <script src="../script.js"></script>
+
+    <script>
+      loadCode("../codes/practical1/Main.java", "p1");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Practical 7</title>
+
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <a href="../index.html" class="back-btn"> ← Back </a>
+
+      <h2>Practical 7</h2>
+
+      <div class="card">
+        <h3>
+          Connect Java application to database and execute SQL queries using GUI
+          interface.
+        </h3>
+
+        <!-- HOW TO RUN -->
+
+        <div class="run-box">
+          <h4>How to Run</h4>
+
+          <pre>
+1. Download MySQL JDBC Driver
+
+Website:
+https://dev.mysql.com/downloads/connector/j/
+
+2. Create folder:
+lib
+
+3. Put JDBC jar file inside lib folder
+
+Example:
+lib/mysql-connector-j-9.7.0.jar
+
+4. Create MySQL database:
+testdb
+
+5. Save file as:
+DatabaseGUI.java
+
+6. Open terminal in project folder
+
+7. Compile:
+
+javac -cp ".;lib/mysql-connector-j-9.7.0.jar" DatabaseGUI.java
+
+8. Run:
+
+java -cp ".;lib/mysql-connector-j-9.7.0.jar" DatabaseGUI
+
+9. Enter SQL queries in GUI
+
+Example:
+SELECT * FROM student;
+
+10. If using XAMPP,
+password may be empty:
+
+"root", ""
+</pre
+          >
+        </div>
+
+        <!-- CODE -->
+
+        <div class="code-box">
+          <div class="file-title">DatabaseGUI.java</div>
+
+          <button class="copy-btn" onclick="copyCode('p7f1', this)">
+            Copy
+          </button>
+
+          <pre>
+<code id="p7f1">Loading...</code>
+</pre>
+        </div>
+      </div>
+    </div>
+
+    <script src="../script.js"></script>
+
+    <script>
+      loadCode("../codes/practical7/DatabaseGUI.java", "p7f1");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Practical 6</title>
+
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <a href="../index.html" class="back-btn"> ← Back </a>
+
+      <h2>Practical 6</h2>
+
+      <div class="card">
+        <h3>
+          Create a client-server application using TCP sockets to echo client
+          messages.
+        </h3>
+
+        <!-- HOW TO RUN -->
+
+        <div class="run-box">
+          <h4>How to Run</h4>
+
+          <pre>
+1. Save the files as:
+   Server.java
+   Client.java
+
+2. Open terminal in the folder
+
+3. Compile:
+javac Server.java Client.java
+
+4. Start server first:
+java Server
+
+5. Open another terminal
+
+6. Run client:
+java Client
+
+7. Enter messages from client
+
+8. Server will echo messages
+
+9. Type exit to stop
+</pre
+          >
+        </div>
+
+        <!-- SERVER FILE -->
+
+        <div class="code-box">
+          <div class="file-title">Server.java</div>
+
+          <button class="copy-btn" onclick="copyCode('p6f1', this)">
+            Copy
+          </button>
+
+          <pre>
+<code id="p6f1">Loading...</code>
+</pre>
+        </div>
+
+        <!-- CLIENT FILE -->
+
+        <div class="code-box">
+          <div class="file-title">Client.java</div>
+
+          <button class="copy-btn" onclick="copyCode('p6f2', this)">
+            Copy
+          </button>
+
+          <pre>
+<code id="p6f2">Loading...</code>
+</pre>
+        </div>
+      </div>
+    </div>
+
+    <script src="../script.js"></script>
+
+    <script>
+      loadCode("../codes/practical6/Server.java", "p6f1");
+
+      loadCode("../codes/practical6/Client.java", "p6f2");
+    </script>
+  </body>
+</html>

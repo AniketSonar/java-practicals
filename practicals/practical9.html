@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Practical 9</title>
+
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <a href="../index.html" class="back-btn"> ← Back </a>
+
+      <h2>Practical 9</h2>
+
+      <div class="card">
+        <h3>
+          Create a user registration system using JSP and Servlet with MySQL
+          database.
+        </h3>
+
+        <!-- HOW TO RUN -->
+
+        <div class="run-box">
+          <h4>How to Run in VS Code</h4>
+
+          <pre>
+1. Install JDK
+
+2. Install Apache Tomcat
+
+3. Install MySQL Server
+
+4. Install these VS Code Extensions:
+   - Extension Pack for Java
+   - Tomcat for Java
+
+5. Download MySQL JDBC Driver
+
+6. Create database:
+
+CREATE DATABASE userdb;
+
+7. Create table:
+
+CREATE TABLE users(
+    name VARCHAR(50),
+    email VARCHAR(50),
+    password VARCHAR(50)
+);
+
+8. Create folder structure:
+
+project/
+│
+├── register.jsp
+│
+└── WEB-INF/
+    │
+    ├── web.xml
+    │
+    └── classes/
+        │
+        └── RegisterServlet.java
+
+9. Compile Servlet:
+
+javac -cp ".;tomcat/lib/servlet-api.jar;lib/mysql-connector-j-9.7.0.jar" ^
+WEB-INF/classes/RegisterServlet.java
+
+10. Copy project folder into:
+
+apache-tomcat/webapps/
+
+11. Start Tomcat Server
+
+12. Open browser:
+
+http://localhost:8080/projectname/register.jsp
+
+13. Fill registration form
+
+14. User data will store
+inside MySQL database
+</pre
+          >
+        </div>
+
+        <!-- FILE 1 -->
+
+        <div class="code-box">
+          <div class="file-title">register.jsp</div>
+
+          <button class="copy-btn" onclick="copyCode('p9f1', this)">
+            Copy
+          </button>
+
+          <pre>
+<code id="p9f1">Loading...</code>
+</pre>
+        </div>
+
+        <!-- FILE 2 -->
+
+        <div class="code-box">
+          <div class="file-title">RegisterServlet.java</div>
+
+          <button class="copy-btn" onclick="copyCode('p9f2', this)">
+            Copy
+          </button>
+
+          <pre>
+<code id="p9f2">Loading...</code>
+</pre>
+        </div>
+
+        <!-- FILE 3 -->
+
+        <div class="code-box">
+          <div class="file-title">web.xml</div>
+
+          <button class="copy-btn" onclick="copyCode('p9f3', this)">
+            Copy
+          </button>
+
+          <pre>
+<code id="p9f3">Loading...</code>
+</pre>
+        </div>
+      </div>
+    </div>
+
+    <script src="../script.js"></script>
+
+    <script>
+      loadCode("../codes/practical9/register.jsp", "p9f1");
+
+      loadCode("../codes/practical9/RegisterServlet.java", "p9f2");
+
+      loadCode("../codes/practical9/web.xml", "p9f3");
+    </script>
+  </body>
+</html>
